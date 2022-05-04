@@ -1,0 +1,61 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+h1 {
+    text-align: center;
+}  
+
+label {
+    display: none;
+}
+
+div.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    margin: 0 0 50px 0;
+}
+
+input {
+    background-image: url(https://www.w3schools.com/css/searchicon.png);
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+}
+
+.btn {
+    background: #3498db;
+    font-family: Arial;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+  
+.btn:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+}
+
+.todo {
+    border: 1px solid #111;
+    padding: 15px;
+    margin: 10px;
+}
+
+.btn-delete {
+    text-transform: uppercase;
+}
