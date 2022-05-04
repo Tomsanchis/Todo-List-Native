@@ -36,12 +36,7 @@ const deletetodo = (todos) => {
   for (let i = 0; i < selectdeletedbutton.length; i++) {
     selectdeletedbutton[i].addEventListener("click", () => {
       selectdivtodo[i].parentNode.removeChild(selectdivtodo[i]);
-      if (todos.length > 0) {
-        todos.splice(i, 2);
-      } else {
-        todos.unshift();
-      }
-      console.log(todos.length);
+      todos.splice(todos, 1);
       console.log(todos);
     });
   }
