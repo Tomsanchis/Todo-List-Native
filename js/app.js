@@ -5,7 +5,7 @@ const addatodo = () => {
   let todos = [];
   buttonadd.addEventListener("click", () => {
     if (input.value != "") {
-      todos.push(input.value);
+      todos.push({ content: input.value });
       console.log(todos);
       input.value = "";
       document.querySelectorAll(".todo").forEach((elem) => {
@@ -15,7 +15,7 @@ const addatodo = () => {
         const div = document.createElement("div");
         div.classList.add("todo");
         const p = document.createElement("p");
-        p.textContent = content;
+        p.textContent = content.content;
         const deletebutton = document.createElement("button");
         deletebutton.classList.add("btn-delete");
         deletebutton.textContent = "delete";
